@@ -1,96 +1,46 @@
 <!DOCTYPE html>
-<!--[if IE 9]>         <html class="ie9 no-focus" data-ng-app="app" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-focus" data-ng-app="app" lang="en"> <!--<![endif]-->
+
+<html class="no-focus" data-ng-app="app" lang="en">
     <head>
         <meta charset="utf-8">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>CHRISTYL</title>
-
-        <meta name="description" content="Instance Game">
-        <meta name="author" content="Instance Game">
-        <meta name="robots" content="noindex, nofollow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-        <!-- Icons -->
-        <!-- <link rel="shortcut icon" href="https://cfwix.com/sdblocker/favicon"> -->
-        <!-- <link rel="icon" type="image/png" href="assets/img/favicons/favicon.ico" sizes="16x16"> -->
-        <!-- END Icons -->
-
-        <!-- Stylesheets Bootstrap and Mango CSS framework -->
-        <link rel="stylesheet" id="css-bootstrap" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" id="css-main" href="assets/css/mango.css">
-        <link rel="stylesheet" id="css-custom" href="assets/css/custom.css">
-        <link rel="stylesheet" id="css-table" href="assets/css/table.css">
-        <link rel="stylesheet" id="css-table" href="assets/css/mine.css">
-        <link rel="stylesheet" id="css-media" href="assets/css/media.css">
-        <link rel="stylesheet" id="css-block" href="assets/css/block.css">
-        <link rel="stylesheet" id="css-clientres" href="assets/css/client-responsive.css">
-
-        <!-- END Stylesheets -->
-        <link rel="stylesheet" href="assets/js/plugins/sweetalert/sweetalert.min.css">
-        <link rel="stylesheet" href="assets/js/plugins/sweetalert/sweetalert.css">
-         <!-- google reCaptcha -->
-         <script src='https://www.google.com/recaptcha/api.js'></script> 
-
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"  href="css/bootstrap.min.css">
+        <script src="js/animation.js"></script>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+ 
     </head>
-    <body data-ng-controller="AppCtrl">
-        <!-- Header -->
-            
-        <header id="header-navbar" data-ui-view="header"></header>
-        <!-- Main -->
-        <main id="main-container" data-ui-view="main"></main>
-        <!-- Footer -->
-        <footer id="page-footer" data-ui-view="footer"></footer>
-
-        <!-- JS Code -->
-        <!-- build:js assets/js/mango.min.js -->
-        <!-- Mango Core JS: jQuery & Bootstrap Related -->
-        <script src="assets/js/core/jquery.min.js"></script>
-        <script src="assets/js/core/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-        <script src="assets/js/plugins/sweetalert/sweetalert.min.js"></script>
-        <!-- <script src="sweetalert2.min.js"></script> -->
-        
-        <!-- Mango Core JS: AngularJS Related -->
-        <script src="assets/js/core/angular.min.js"></script>
-        <script src="assets/js/core/angular-ui-router.min.js"></script>
-        <script src="assets/js/core/angular-ui-bootstrap-tpls.min.js"></script>
-        <script src="assets/js/core/ocLazyLoad.min.js"></script>
-        <script src="assets/js/core/ngStorage.min.js"></script>
-        <script src="assets/js/core/angular-cookies.min.js"></script>
-        <script src="assets/js/core/angular-base64.min.js"></script>
-
-        <!-- Mango Core JS: App Related -->
-         <script src="assets/js/app.js"></script>
-         <script src="assets/js/directives.js"></script>
-         <script src="assets/js/controllers.js"></script>
-         <script src="assets/js/service/authFactory.js"></script>
-         <script src="assets/js/service/dateFactory.js"></script>
-         <script src="assets/js/service/uiHelpers.js"></script>
-         <script src="assets/js/service/spriteFactory.js"></script>
-
-         <script src="assets/js/controllers/mainCtrl.js"></script>
-         <script src="assets/js/controllers/headerCtrl.js"></script>
-         <script src="assets/js/controllers/myinfoCtrl.js"></script>
-         <script src="assets/js/controllers/loginCtrl.js"></script>
-         <script src="assets/js/controllers/passfindCtrl.js"></script>
-         <script src="assets/js/controllers/signupCtrl.js"></script>
-         <script src="assets/js/controllers/emailCtrl.js"></script>
-         <script src="assets/js/controllers/adminCtrl.js"></script>
-         <script src="assets/js/controllers/oddspiaCtrl.js"></script>
-         <script src="assets/js/controllers/mineCtrl.js"></script>
-         <script src="assets/js/controllers/mainGameCtrl.js"></script>
-         <script src="assets/js/controllers/wheelCtrl.js"></script>
-         <script src="assets/js/controllers/hiloCtrl.js"></script>
-         <script src="assets/js/controllers/kenoCtrl.js"></script>
-         <script src="assets/js/controllers/sdblockerCtrl.js"></script>
-          <script src="assets/js/controllers/adminmonitorCtrl.js"></script>
-         <script src="assets/js/controllers/clientmonitorCtrl.js"></script>
-         <script src="assets/js/plugins/winwheel/Winwheel.min.js"></script>
-         <script src="assets/js/plugins/winwheel/TweenMax.min.js"></script>
-
-        <!-- /build -->
+    <body class="bg" onload="typeWriter()">
+        <div class="col-sm-12 head_bg">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 intro_bg" >
+                <h1 ><p class="text" id="demo"></p></h1>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+         <div class="col-sm-12 body_bg">
+            <div class="col-sm-2"><h1>WORKS</h1></div>
+            <div class="col-sm-12">
+                <div class="col-sm-3 "></div>
+                <div class="col-sm-3 works_bg">
+                    <a href="https://oddspia.com/#/admin/result">Games</a>
+                </div>
+                <div class="col-sm-3 works_bg">e</div>
+                <div class="col-sm-3 works_bg">e</div>
+            </div>
+             <div class="col-sm-12" style="margin-top: 1.5em;">
+                <div class="col-sm-3 "></div>
+                <div class="col-sm-3 works_bg">e</div>
+                <div class="col-sm-3 works_bg">e</div>
+                <div class="col-sm-3 works_bg">e</div>
+            </div>
+             <div class="col-sm-12" style="margin-top: 1.5em;    margin-bottom: 1.5em;">
+                <div class="col-sm-3 "></div>
+                <div class="col-sm-3 works_bg">e</div>
+                <div class="col-sm-3 works_bg">e</div>
+                <div class="col-sm-3 works_bg">e</div>
+            </div>
+        </div>
     </body>
 </html>
-.

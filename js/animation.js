@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Welcome to my Portfolio';
+var txt = 'Portfolio';
 var speed = 50;
 
 
